@@ -1,87 +1,213 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kabeljau mit geschmortem Wurzelgemüse und Kartoffel-Sellerie-Püree</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
-        h1, h2 { color: #2c3e50; }
-        ul { list-style-type: square; }
-        .container { max-width: 600px; margin: auto; }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kabeljau mit Wurzelgemüse – Rezept</title>
+
+  <style>
+    :root {
+      --bg: #fafafa;
+      --card: #ffffff;
+      --text: #222;
+      --muted: #555;
+      --accent: #2a6f97;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header .meta {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .card {
+      background-color: var(--card);
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      margin-top: 24px;
+      font-size: 1.4rem;
+      color: var(--accent);
+    }
+
+    ul, ol {
+      padding-left: 1.2rem;
+    }
+
+    ul li, ol li {
+      margin-bottom: 12px;
+    }
+
+    .nutrients {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 12px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "name": "Kabeljau mit Wurzelgemüse",
+    "author": {
+      "@type": "Person",
+      "name": "Dein Name"
+    },
+    "description": "Ein zartes Kabeljau-Filet, kombiniert mit aromatischem Wurzelgemüse – einfach, gesund und lecker.",
+    "recipeYield": "4 Portionen",
+    "prepTime": "PT20M",
+    "cookTime": "PT30M",
+    "totalTime": "PT50M",
+    "recipeCategory": "Hauptgericht",
+    "recipeCuisine": "Deutsch",
+    "recipeIngredient": [
+      "4 Kabeljau-Filets (je ca. 150 g)",
+      "2 Karotten",
+      "1 Pastinake",
+      "1/2 Sellerieknolle",
+      "1 Zwiebel",
+      "2 EL Olivenöl",
+      "200 ml Fisch- oder Gemüsebrühe",
+      "100 ml Sahne (optional)",
+      "Salz, Pfeffer",
+      "Frische Petersilie"
+    ],
+    "recipeInstructions": [
+      {
+        "@type": "HowToStep",
+        "text": "Das Wurzelgemüse (Karotten, Pastinake, Sellerie) schälen und in gleichmäßige Stücke schneiden."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Zwiebel fein würfeln. In einem großen Topf Olivenöl erhitzen, Zwiebel darin glasig dünsten."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Das geschnittene Gemüse hinzufügen und kurz anbraten."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Mit der Brühe ablöschen, aufkochen lassen und das Gemüse etwa 15 Minuten köcheln, bis es weich ist."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Inzwischen die Kabeljau-Filets mit Salz und Pfeffer würzen."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Die Filets auf das Gemüse legen, die Hitze reduzieren, und den Fisch 10–12 Minuten ziehen lassen."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Optional: Sahne zum Gemüse geben, kurz aufkochen und so eine cremige Sauce herstellen."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Mit frisch gehackter Petersilie garnieren, servieren und genießen."
+      }
+    ],
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "280 kcal",
+      "proteinContent": "30 g",
+      "fatContent": "12 g",
+      "carbohydrateContent": "8 g"
+    }
+  }
+  </script>
+
 </head>
 <body>
-    <div class="container">
-        <h1>Kabeljau mit geschmortem Wurzelgemüse und Kartoffel-Sellerie-Püree</h1>
+  <div class="container">
+    <header>
+      <h1>Kabeljau mit Wurzelgemüse</h1>
+      <div class="meta">Gesamtzeit: ca. 50 Minuten • 4 Portionen</div>
+    </header>
 
-        <h2>Zutaten (für 2 Personen):</h2>
+    <div class="card">
+      <section>
+        <h2>Beschreibung</h2>
+        <p>
+          Ein klassisches Gericht: Zartes Kabeljau-Filet trifft auf aromatisches Wurzelgemüse. 
+          Perfekt für ein gesundes, leichtes Abendessen – mit viel Geschmack und wenig Aufwand.
+        </p>
+      </section>
 
-        <h3>Für den Fisch:</h3>
+      <section>
+        <h2>Zutaten</h2>
         <ul>
-            <li>2 Kabeljaufilets (ca. 150 g pro Stück)</li>
-            <li>1 EL Olivenöl</li>
-            <li>1 TL Butter</li>
-            <li>1 TL Zitronensaft</li>
-            <li>Salz & Pfeffer</li>
-            <li>½ TL Senf</li>
-            <li>½ TL Honig</li>
+          <li>4 Kabeljau-Filets (je ca. 150 g)</li>
+          <li>2 Karotten</li>
+          <li>1 Pastinake</li>
+          <li>½ Sellerieknolle</li>
+          <li>1 Zwiebel</li>
+          <li>2 EL Olivenöl</li>
+          <li>200 ml Fisch- oder Gemüsebrühe</li>
+          <li>100 ml Sahne (optional)</li>
+          <li>Salz, Pfeffer</li>
+          <li>Frische Petersilie zum Garnieren</li>
         </ul>
+      </section>
 
-        <h3>Für das geschmorte Wurzelgemüse:</h3>
-        <ul>
-            <li>1 Pastinake, in Stifte geschnitten</li>
-            <li>1 Möhre, in Stifte geschnitten</li>
-            <li>½ Knollensellerie, in Würfel geschnitten</li>
-            <li>1 kleine rote Zwiebel, in Spalten geschnitten</li>
-            <li>1 EL Olivenöl</li>
-            <li>100 ml Gemüsebrühe</li>
-            <li>1 TL Apfelessig</li>
-            <li>Salz & Pfeffer</li>
-            <li>½ TL Thymian (frisch oder getrocknet)</li>
-        </ul>
+      <section>
+        <h2>Zubereitung</h2>
+        <ol>
+          <li>Das Wurzelgemüse schälen und in gleichmäßige Stücke schneiden.</li>
+          <li>Zwiebel fein würfeln und in Olivenöl glasig dünsten.</li>
+          <li>Gemüse hinzufügen und kurz anbraten.</li>
+          <li>Mit Brühe ablöschen, aufkochen und ca. 15 Minuten köcheln, bis das Gemüse weich ist.</li>
+          <li>Die Kabeljau-Filets mit Salz und Pfeffer würzen.</li>
+          <li>Filets auf das Gemüse legen, Hitze reduzieren und 10–12 Minuten gar ziehen lassen.</li>
+          <li>Optional Sahne zum Gemüse geben, kurz aufkochen und eine cremige Sauce erzeugen.</li>
+          <li>Mit Petersilie bestreuen, servieren und genießen.</li>
+        </ol>
+      </section>
 
-        <h3>Für das Kartoffel-Sellerie-Püree:</h3>
-        <ul>
-            <li>200 g Kartoffeln, geschält und gewürfelt</li>
-            <li>100 g Knollensellerie, geschält und gewürfelt</li>
-            <li>20 g Butter</li>
-            <li>50 ml Milch</li>
-            <li>Salz & Muskatnuss</li>
-        </ul>
-
-        <h2>Zubereitung:</h2>
-
-        <h3>1. Püree zubereiten:</h3>
-        <ul>
-            <li>Kartoffeln und Sellerie in Salzwasser ca. 15 Minuten weich kochen.</li>
-            <li>Abgießen, mit Butter und Milch stampfen.</li>
-            <li>Mit Salz und Muskatnuss abschmecken.</li>
-        </ul>
-
-        <h3>2. Wurzelgemüse schmoren:</h3>
-        <ul>
-            <li>In einer Pfanne Olivenöl erhitzen, das Gemüse ca. 5 Minuten anbraten.</li>
-            <li>Mit Gemüsebrühe ablöschen und Apfelessig hinzufügen.</li>
-            <li>Mit Salz, Pfeffer und Thymian würzen.</li>
-            <li>Zugedeckt ca. 10 Minuten schmoren, bis das Gemüse weich ist.</li>
-        </ul>
-
-        <h3>3. Kabeljau braten:</h3>
-        <ul>
-            <li>Kabeljau mit Salz, Pfeffer, Senf und Honig würzen.</li>
-            <li>In einer Pfanne mit Olivenöl und Butter ca. 3-4 Minuten pro Seite goldbraun braten.</li>
-            <li>Mit Zitronensaft beträufeln.</li>
-        </ul>
-
-        <h3>4. Anrichten:</h3>
-        <ul>
-            <li>Das Püree auf Tellern verteilen.</li>
-            <li>Das geschmorte Gemüse daraufgeben.</li>
-            <li>Den Kabeljau daraufsetzen und servieren.</li>
-        </ul>
-
-        <p><strong>Guten Appetit!</strong></p>
+      <section>
+        <h2>Nährwerte (ca. pro Portion)</h2>
+        <p class="nutrients">~280 kcal • Protein: 30 g • Fett: 12 g • Kohlenhydrate: 8 g</p>
+      </section>
     </div>
+
+    <footer>
+      <p>Rezept erstellt von Dir. Du kannst diese Seite nach Belieben anpassen.</p>
+    </footer>
+  </div>
 </body>
 </html>
